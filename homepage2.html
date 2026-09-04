@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Window Blinds Distributor | MOWIN Blinds</title>
+<meta name="description" content="MOWIN — B2B window blinds distributor for interior vendors, contractors & corporations in Jakarta, Bogor, Depok, Tangerang, Bekasi. Custom sizing, tier pricing, SLA installation.">
+<link rel="canonical" href="https://www.mowinblinds.com/">
+<meta property="og:title" content="Premium Window Blinds Distributor — MOWIN">
+<meta property="og:description" content="B2B window blinds partner: distributor pricing, custom sizing, installation across Jakarta–Bogor–Depok–Tangerang–Bekasi.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./assets/images/hero-1.jpg">
+<link rel="icon" href="./assets/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"MOWIN Blinds — Premium Window Blinds Distributor","url":"https://www.mowinblinds.com/","telephone":"+62-811-9271-628","email":"info@mowinblinds.com","address":{"@type":"PostalAddress","streetAddress":"The Central 88, Jl. Griya Utama Unit 832, Pademangan Timur","addressLocality":"Jakarta Utara","postalCode":"14410","addressCountry":"ID"},"areaServed":["Jakarta","Bogor","Depok","Tangerang","Bekasi"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does MOWIN handle B2B project volume orders?","acceptedAnswer":{"@type":"Answer","text":"Yes. MOWIN is a window blinds distributor for interior vendors, contractors, and corporations with tier pricing, custom sizing per opening, and phased installation across Jabodetabek."}},{"@type":"Question","name":"Which areas do you cover?","acceptedAnswer":{"@type":"Answer","text":"Jakarta, Bogor, Depok, Tangerang, and Bekasi. On-site measurement surveys are scheduled within 1–3 business days."}}]}
+</script>
+<style>
+:root{
+  --ink:#1a1a1a;
+  --body:#4a4a4a;
+  --mut:#8a8a8a;
+  --line:#e8e6e3;
+  --bg:#faf9f7;
+  --soft:#f3f1ee;
+  --acc:#9a7b4f;
+  --acc-light:#c4a97d;
+  --f:'DM Sans',Helvetica,Arial,sans-serif;
+  --fs:'Playfair Display',Georgia,serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--body);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+
+/* ── HEADER ── */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:24px 44px;transition:all .4s cubic-bezier(.4,0,.2,1)}
+.hdr.scrolled{background:rgba(250,249,247,.95);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.hdr-brand{display:flex;align-items:center;gap:12px}
+.hdr-brand img{height:36px;transition:filter .3s}
+.hdr.scrolled .hdr-brand img{filter:none}
+.hdr-right{display:flex;align-items:center;gap:16px}
+.btn-dl{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;font-weight:600;font-size:.85rem;text-decoration:none;background:var(--acc);color:#fff;border:1px solid var(--acc);transition:all .3s cubic-bezier(.4,0,.2,1);font-family:var(--f);cursor:pointer}
+.btn-dl:hover{background:var(--acc-light);border-color:var(--acc-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(154,123,79,.25)}
+.btn-dl svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+.burger{width:40px;height:32px;background:none;border:0;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;padding:5px 2px}
+.burger span{display:block;height:2px;background:#fff;transition:all .3s;border-radius:2px}
+.hdr.scrolled .burger span{background:var(--ink)}
+
+/* ── OVERLAY NAV ── */
+.overlay{position:fixed;inset:0;background:rgba(26,26,26,.97);backdrop-filter:blur(20px);color:#fff;z-index:70;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .4s cubic-bezier(.4,0,.2,1)}
+.overlay.open{opacity:1;pointer-events:auto}
+.overlay nav{display:flex;flex-direction:column;gap:6px;text-align:center}
+.overlay a{color:#fff;text-decoration:none;font-size:clamp(2.2rem,5.5vw,3.6rem);font-family:var(--fs);font-weight:400;letter-spacing:-.01em;transition:color .25s;line-height:1.2}
+.overlay a:hover{color:var(--acc-light)}
+.overlay small{color:var(--mut);letter-spacing:.3em;font-size:.7rem;font-family:var(--f);font-weight:500;text-transform:uppercase;margin-bottom:24px;display:block}
+.overlay .close{position:absolute;top:28px;right:40px;font-size:1.6rem;background:none;border:0;color:#fff;cursor:pointer;font-weight:300;transition:opacity .25s}
+.overlay .close:hover{opacity:.6}
+
+/* ── HERO (full-bleed, auto-slide, zoom-in effect) ── */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;background:#111}
+.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:0;transform:scale(1);animation:none;transition:opacity 1.2s ease-in-out,transform 6s ease-out}
+.hero-slide.active{opacity:1;transform:scale(1.08)}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.04) 30%,rgba(0,0,0,.12) 60%,rgba(0,0,0,.5) 100%);z-index:1}
+.hero-text{position:absolute;bottom:-0.50em;left:0;right:0;z-index:2;padding:0;text-align:center;line-height:1}
+.hero-text h1{font-family:var(--f);font-size:clamp(4rem,11vw,8rem);font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#fff;margin:0;white-space:nowrap;text-shadow:0 2px 24px rgba(0,0,0,.35);padding:0;transform:translateY(.1em)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:999px;font-weight:600;font-size:.88rem;text-decoration:none;transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer;border:1px solid transparent;font-family:var(--f)}
+.btn-w{background:#fff;color:var(--ink)}
+.btn-w:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
+.btn-o{border-color:rgba(255,255,255,.5);color:#fff;background:transparent}
+.btn-o:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.7)}
+
+/* ── SECTION LABEL ── */
+section{padding:110px 0}
+.label{font-size:.72rem;font-weight:600;letter-spacing:.35em;text-transform:uppercase;color:var(--acc);margin-bottom:36px;font-family:var(--f)}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1.3fr .85fr .35fr;gap:40px;align-items:start}
+.about-grid .big{border-radius:6px;width:100%;aspect-ratio:16/10;object-fit:cover}
+.about-grid h2{font-family:var(--fs);font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.35;color:var(--ink);font-weight:400;max-width:24ch}
+.about-grid p{margin-top:20px;color:var(--body);font-size:1rem;line-height:1.75}
+.about-grid .link{display:inline-flex;align-items:center;gap:6px;margin-top:18px;color:var(--ink);font-weight:600;font-size:.9rem;transition:color .25s}
+.about-grid .link:hover{color:var(--acc)}
+.about-grid .tall{width:100%;aspect-ratio:3/5.5;object-fit:cover;border-radius:6px}
+
+/* ── PRODUCTS ── */
+.prod-head{font-family:var(--fs);font-size:clamp(1.5rem,2.8vw,2.2rem);color:var(--ink);font-weight:400;max-width:28ch;margin-bottom:56px;line-height:1.3}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.prod{display:block;border-top:1px solid var(--line);padding:22px 16px 22px 0;text-decoration:none;color:var(--ink);transition:all .3s}
+.prod .n{font-size:2.4rem;font-weight:300;letter-spacing:-.02em;color:var(--mut);font-family:var(--fs);transition:color .3s}
+.prod .t{font-size:1.15rem;font-weight:600;margin-top:4px;letter-spacing:-.01em}
+.prod small{display:block;color:var(--mut);font-size:.82rem;margin-top:5px;font-weight:400}
+.prod:hover{padding-left:12px}
+.prod:hover .n{color:var(--acc)}
+
+/* ── PROJECTS ── */
+.proj p.lead{max-width:52rem;color:var(--body);font-size:1.02rem;margin-bottom:50px;line-height:1.75}
+.proj-grid{display:grid;grid-template-columns:1fr 1.7fr 1fr;gap:24px;align-items:start}
+.proj figure{margin:0}
+.proj img{width:100%;object-fit:cover;border-radius:6px;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.proj figure:hover img{transform:scale(1.03)}
+.proj .p1 img,.proj .p3 img{aspect-ratio:3/4.8}
+.proj .p2 img{aspect-ratio:16/13}
+.proj figcaption{font-size:.72rem;letter-spacing:.16em;color:var(--ink);margin-top:14px;font-weight:600;text-transform:uppercase}
+
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
+.service-card{text-align:center;border-radius:12px;background:#fff;overflow:hidden;border:1px solid var(--line);transition:all .35s cubic-bezier(.4,0,.2,1)}
+.service-card:hover{border-color:var(--acc-light);box-shadow:0 12px 40px rgba(0,0,0,.08);transform:translateY(-4px)}
+.service-card .img-hold{width:100%;padding-bottom:72%;position:relative;overflow:hidden}
+.service-card .img-hold img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.service-card:hover .img-hold img{transform:scale(1.05)}
+.service-card h3{font-family:var(--fs);font-size:1.25rem;font-weight:500;color:var(--ink);margin:0}
+.service-card .card-body{padding:28px 24px 32px}
+.service-card p{font-size:.92rem;color:var(--body);line-height:1.7;margin-top:10px}
+
+/* ── CLIENTS CAROUSEL (mobile app style cards) ── */
+.clients{padding:0 0 110px;overflow:hidden}
+.clients .carousel{position:relative;width:100%;max-width:100%;margin:0 auto;padding:0 40px}
+.carousel-track{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;scroll-behavior:smooth;padding:24px 0;scrollbar-width:none;-ms-overflow-style:none;align-items:center}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-item{flex:0 0 180px;height:100px;border-radius:16px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:20px 28px;scroll-snap-align:center;transition:all .3s}
+.carousel-item:hover{border-color:var(--acc-light);box-shadow:0 4px 20px rgba(154,123,79,.08)}
+.carousel-item img{width:100%;height:100%;object-fit:contain;opacity:.7;transition:all .3s}
+.carousel-item:hover img{opacity:1}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid var(--line);cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:all .3s}
+.carousel-btn:hover{border-color:var(--acc);box-shadow:0 4px 16px rgba(154,123,79,.12)}
+.carousel-btn svg{width:16px;height:16px;stroke:var(--ink);stroke-width:2;fill:none}
+.carousel-btn.prev{left:0}
+.carousel-btn.next{right:0}
+
+/* ── FAQ ── */
+.faq{max-width:800px}
+details{border-top:1px solid var(--line);padding:22px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;color:var(--ink);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-size:1.3rem;font-weight:300;color:var(--mut);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--body);font-size:.95rem;line-height:1.75}
+
+/* ── FOOTER ── */
+footer{background:#1a1a1a;color:#fff;padding:100px 0 0}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.foot-brand img{height:42px;margin-bottom:28px;filter:brightness(0) invert(1)}
+.foot-brand p{margin-bottom:12px;color:rgba(255,255,255,.6);font-size:.95rem}
+.foot-brand a{color:#fff;font-weight:500;transition:color .25s}
+.foot-brand a:hover{color:var(--acc-light)}
+.foot-form h2{font-family:var(--fs);font-size:clamp(1.8rem,3.5vw,2.6rem);color:#fff;letter-spacing:-.02em;margin-bottom:28px;font-weight:400}
+.foot-form label{display:block;font-size:.82rem;font-weight:500;margin-bottom:14px;color:rgba(255,255,255,.7);letter-spacing:.04em;text-transform:uppercase}
+.foot-form input,.foot-form textarea{width:100%;font:inherit;padding:14px 16px;border:1px solid rgba(255,255,255,.15);border-radius:4px;background:rgba(255,255,255,.06);margin-top:6px;color:#fff;font-size:.95rem;transition:border-color .3s}
+.foot-form input::placeholder,.foot-form textarea::placeholder{color:rgba(255,255,255,.3)}
+.foot-form input:focus,.foot-form textarea:focus{outline:none;border-color:var(--acc-light)}
+.foot-form textarea{min-height:120px;resize:vertical}
+.foot-form button{background:var(--acc);color:#fff;border:0;padding:15px 44px;font:inherit;font-weight:600;cursor:pointer;border-radius:4px;margin-top:10px;transition:all .3s;font-size:.92rem;letter-spacing:.04em}
+.foot-form button:hover{background:var(--acc-light);transform:translateY(-1px)}
+.foot-base{margin-top:80px;border-top:1px solid rgba(255,255,255,.1);padding:22px 0;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.8rem;color:rgba(255,255,255,.35)}
+
+/* ── WA FAB ── */
+.wa{position:fixed;right:24px;bottom:24px;z-index:65;background:#25d366;color:#fff;text-decoration:none;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.3);transition:all .3s}
+.wa:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.4)}
+.wa svg{width:26px;height:26px;fill:#fff}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .about-grid,.foot-grid{grid-template-columns:1fr}
+  .prod-grid{grid-template-columns:1fr 1fr}
+  .proj-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  section{padding:80px 0}
+  .hdr{padding:16px 22px}
+  .hero-text h1{font-size:clamp(3rem,8vw,5rem);letter-spacing:.12em}
+  .carousel-item{flex:0 0 150px;height:85px;padding:16px 20px}
+  .carousel-btn{width:36px;height:36px}
+  .carousel-btn.prev{left:0}
+  .carousel-btn.next{right:0}
+}
+@media(max-width:600px){
+  .prod-grid{grid-template-columns:1fr}
+  .wrap{padding:0 20px}
+  .hero-text h1{font-size:clamp(2.2rem,10vw,3.2rem);letter-spacing:.08em}
+  .btn-dl{padding:9px 16px;font-size:.78rem}
+  .btn-dl svg{width:14px;height:14px}
+  .hdr-right{gap:10px}
+  .carousel-item{flex:0 0 130px;height:72px;padding:14px 18px}
+  .carousel-btn{width:32px;height:32px}
+  .carousel-btn svg{width:14px;height:14px}
+  .carousel-btn.prev{left:-4px}
+  .carousel-btn.next{right:-4px}
+}
+
+/* ── ANIMATIONS ── */
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.4,0,.2,1),transform .7s cubic-bezier(.4,0,.2,1)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <a href="#" aria-label="MOWIN" class="hdr-brand"><img src="./assets/images/logo.png" alt="MOWIN Blinds"></a>
+  <div class="hdr-right">
+    <a class="btn-dl" href="./assets/MOWIN-Catalog.pdf" download="MOWIN-Catalog.pdf" aria-label="Download catalog"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Download Catalog</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="overlay" id="overlay">
+  <button class="close" id="close" aria-label="Close">×</button>
+  <nav>
+    <small>MOWIN — Premium Window Blinds</small>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+<section class="hero" style="padding:0">
+  <img class="hero-slide active" src="./assets/images/product-interior-curtain.jpg" alt="Premium interior curtains in modern space" fetchpriority="high">
+  <img class="hero-slide" src="./assets/images/product-roll-blinds.jpg" alt="Premium roller blinds in modern space">
+  <div class="hero-text">
+    <h1>MOWIN BLINDS</h1>
+  </div>
+</section>
+
+<section id="about"><div class="wrap">
+  <h4 class="label">About Us</h4>
+  <div class="about-grid">
+    <img class="big" src="./assets/images/origin-story.jpg" alt="MOWIN blinds team collaborating on a large-scale project in Jakarta">
+    <div>
+      <h2>B2B Window Blinds Distributor for Jabodetabek. MOWIN supplies premium products for diverse project demands.</h2>
+      <p>With a comprehensive product range, MOWIN serves as the trusted partner for vendors, contractors, and corporations — ensuring precise sizing, consistent fabric batches, and clean handovers at every opening.</p>
+      <a href="https://wa.me/628119271628?text=Request%20MOWIN%20distributor%20catalog." class="link">Request catalog & tier pricing →</a>
+    </div>
+    <img class="tall" src="./assets/images/hero-2.jpg" alt="Detail of premium blackout fabric on a roller blind">
+  </div>
+</div></section>
+
+<section id="products" style="padding-top:0"><div class="wrap">
+  <h4 class="label">Products</h4>
+  <h2 class="prod-head">Precision Innovation & Protection for Every Window.</h2>
+  <div class="prod-grid">
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2001%20Roller%20Blinds%20pricing."><div class="n">01</div><div class="t">Roller Blinds</div><small>Blackout · Dimout · Screen</small></a>
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2002%20Blackout%20pricing."><div class="n">02</div><div class="t">Blackout</div><small>Meeting rooms & executive offices</small></a>
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2003%20Dimout%20pricing."><div class="n">03</div><div class="t">Dimout</div><small>Soft light, preserved views</small></a>
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2004%20Interior%20Curtain%20pricing."><div class="n">04</div><div class="t">Interior Curtain</div><small>Hotels & premium residences</small></a>
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2005%20Printed%20Blinds%20pricing."><div class="n">05</div><div class="t">Printed Blinds</div><small>Custom logos & patterns</small></a>
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2006%203D%20Blinds%20pricing."><div class="n">06</div><div class="t">3D Blinds</div><small>Modern visual dimension</small></a>
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2007%20Exterior%20Blinds%20pricing."><div class="n">07</div><div class="t">Exterior Blinds</div><small>Balconies & semi-outdoor</small></a>
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2008%20Hospital%20Curtain%20pricing."><div class="n">08</div><div class="t">Hospital Curtain</div><small>Hospitals & clinics + rails</small></a>
+    <a class="prod" href="https://wa.me/628119271628?text=Request%2009%20Motorized%20System%20pricing."><div class="n">09</div><div class="t">Motorized System</div><small>Project automation</small></a>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h4 class="label">Our Services</h4>
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <div class="img-hold"><img src="./assets/images/product-roll-blinds.jpg" alt="Expert consultation on roller blinds"></div>
+      <div class="card-body">
+        <h3>Expert Consultation</h3>
+        <p>Our specialists help you select the perfect blinds for your project — fabric type, opacity, mechanism, and aesthetic direction, all tailored to your specifications.</p>
+      </div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="img-hold"><img src="./assets/images/product-interior-curtain.jpg" alt="Professional blinds installation"></div>
+      <div class="card-body">
+        <h3>Professional Installation</h3>
+        <p>SLA-backed installation by certified technicians. We handle phased rollouts across multi-floor buildings, with after-hours and weekend slots available.</p>
+      </div>
+    </div>
+    <div class="service-card fade-up">
+      <div class="img-hold"><img src="./assets/images/product-exterior-blinds.jpg" alt="After-sales support and maintenance"></div>
+      <div class="card-body">
+        <h3>After-Sales Support</h3>
+        <p>Complete documentation, warranty coverage, and ongoing maintenance support. We stand behind every installation with dedicated B2B account management.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects" class="proj" style="padding-top:0"><div class="wrap">
+  <h4 class="label">Projects</h4>
+  <p class="lead">Explore our completed projects and witness the dedication in every delivery. Each handover is proof of our vision — and a promise for your next project.</p>
+  <div class="proj-grid">
+    <figure class="p1"><img src="./assets/images/product-exterior-blinds.jpg" alt="Exterior blinds installation on a Jakarta office tower"><figcaption>Office Tower ——— Jakarta</figcaption></figure>
+    <figure class="p2"><img src="./assets/images/product-interior-curtain.jpg" alt="Interior curtain installation in a Bogor hospitality project"><figcaption>Hospitality ——— Bogor</figcaption></figure>
+    <figure class="p3"><img src="./assets/images/product-hospital-curtain.jpg" alt="Hospital curtain installation in Bekasi healthcare facility"><figcaption>Healthcare ——— Bekasi</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="clients"><div class="wrap">
+  <h4 class="label" style="text-align:center">Trusted By</h4>
+  <div class="carousel">
+    <button class="carousel-btn prev" onclick="scrollCarousel(-1)" aria-label="Previous"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-item"><img src="./assets/clients/bni.png" alt="BNI"></div>
+      <div class="carousel-item"><img src="./assets/clients/bri.png" alt="BRI"></div>
+      <div class="carousel-item"><img src="./assets/clients/mandiri.png" alt="Mandiri"></div>
+      <div class="carousel-item"><img src="./assets/clients/indosat.png" alt="Indosat"></div>
+      <div class="carousel-item"><img src="./assets/clients/jasamarga.png" alt="Jasa Marga"></div>
+      <div class="carousel-item"><img src="./assets/clients/kemenkes.png" alt="Kemenkes"></div>
+      <div class="carousel-item"><img src="./assets/clients/gms.png" alt="GMS"></div>
+      <div class="carousel-item"><img src="./assets/clients/fithub.png" alt="FitHub"></div>
+      <div class="carousel-item"><img src="./assets/clients/cove.png" alt="Cove"></div>
+      <div class="carousel-item"><img src="./assets/clients/bumn.png" alt="BUMN"></div>
+      <div class="carousel-item"><img src="./assets/clients/bsi.png" alt="BSI"></div>
+      <div class="carousel-item"><img src="./assets/clients/aws.png" alt="AWS"></div>
+      <div class="carousel-item"><img src="./assets/clients/shopee.png" alt="Shopee"></div>
+      <div class="carousel-item"><img src="./assets/clients/netflix.png" alt="Netflix"></div>
+      <div class="carousel-item"><img src="./assets/clients/bareksim.png" alt="Bareksa"></div>
+    </div>
+    <button class="carousel-btn next" onclick="scrollCarousel(1)" aria-label="Next"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+  </div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap faq">
+  <h4 class="label">Procurement FAQ</h4>
+  <details open><summary>Does MOWIN handle B2B project volume orders?</summary><p>Yes. MOWIN is a window blinds distributor for interior vendors, contractors, and corporations with tier pricing, custom sizing per opening, and phased installation across Jakarta, Bogor, Depok, Tangerang, and Bekasi.</p></details>
+  <details><summary>How does distributor pricing work for vendors?</summary><p>Pricing is calculated per opening based on actual measurements, fabric type, and manual or motorized system. Vendors receive exclusive tier pricing, ensuring margin for survey and installation services.</p></details>
+  <details><summary>What is the SLA for survey and installation?</summary><p>On-site measurement within 1–3 business days. Installation is scheduled per floor or zone, with night and weekend slots available for occupied offices, complete with formal handover documentation.</p></details>
+</div></section>
+
+<footer id="contact"><div class="wrap foot-grid">
+  <div class="foot-brand">
+    <img src="./assets/images/logo.png" alt="MOWIN Blinds">
+    <p><strong>PT. Mowin Blinds Indonesia</strong></p>
+    <p>The Central 88, Jl. Griya Utama Unit 832,<br>Pademangan Timur, Jakarta Utara 14410</p>
+    <p>(021) 2962 0929<br>0811 9271 628</p>
+    <p><a href="mailto:info@mowinblinds.com">info@mowinblinds.com</a></p>
+    <p style="margin-top:14px;color:rgba(255,255,255,.35)">Service Areas: Jakarta · Bogor · Depok · Tangerang · Bekasi</p>
+  </div>
+  <div class="foot-form">
+    <h2>Get in Touch</h2>
+    <form onsubmit="event.preventDefault();alert('Thank you. Our B2B team will reach out within 1 business day.');">
+      <label>First Name*<input required placeholder="John"></label>
+      <label>Last Name<input placeholder="Doe"></label>
+      <label>Email*<input type="email" required placeholder="john@company.com"></label>
+      <label>Project Details<textarea placeholder="e.g. 86 roller blackout openings, BSD Tangerang site, survey needed this week."></textarea></label>
+      <button type="submit">Submit Inquiry</button>
+    </form>
+  </div>
+</div>
+<div class="wrap foot-base"><span>© 2026 MOWIN Blinds — Premium Window Blinds Distributor Jabodetabek.</span><span>Vendors · Contractors · Corporations</span></div>
+</footer>
+
+<a class="wa" href="https://wa.me/628119271628?text=Hello%20MOWIN,%20I%20need%20a%20distributor%20quote%20for%20window%20blinds." aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.058 9.378L1.054 31.2l6.024-1.97A15.906 15.906 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.336 22.612c-.39 1.1-1.932 2.014-3.168 2.28-.84.18-1.938.324-5.626-1.206-4.722-1.956-7.758-6.762-7.992-7.074-.228-.312-1.89-2.514-1.89-4.796s1.2-3.408 1.626-3.87c.39-.42.936-.54 1.248-.54.156 0 .294.006.42.012.408.018.612.042.876.66.33.768 1.134 2.76 1.23 2.958.096.198.192.468.06.744-.126.282-.234.456-.468.72-.234.264-.468.588-.666.786-.198.198-.42.414-.18.792.24.378 1.068 1.764 2.292 2.862 1.578 1.41 2.91 1.848 3.318 2.052.312.156.654.12.876-.156.288-.36.648-.918 1.008-1.476.252-.39.57-.438.918-.294.348.132 2.202 1.044 2.58 1.236.378.192.63.288.726.444.096.156.096.9-.294 1.998z"/></svg></a>
+
+<script>
+const hdr=document.getElementById('hdr'),ov=document.getElementById('overlay');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>40),{passive:true});
+document.getElementById('burger').onclick=()=>ov.classList.add('open');
+document.getElementById('close').onclick=()=>ov.classList.remove('open');
+ov.querySelectorAll('a').forEach(a=>a.onclick=()=>ov.classList.remove('open'));
+
+// Hero auto-slide (5000ms)
+const heroSlides=document.querySelectorAll('.hero-slide');
+let heroIdx=0;
+if(heroSlides.length>1){
+  setInterval(()=>{
+    heroSlides[heroIdx].classList.remove('active');
+    heroIdx=(heroIdx+1)%heroSlides.length;
+    heroSlides[heroIdx].classList.add('active');
+  },5000);
+}
+
+// Fade-up on scroll
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:.15});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+// Carousel auto-scroll
+const carouselTrack=document.getElementById('carouselTrack');
+if(carouselTrack){
+  let autoScrollInterval;
+  let scrollPaused=false;
+
+  function startAutoScroll(){
+    autoScrollInterval=setInterval(()=>{
+      if(!scrollPaused){
+        const maxScroll=carouselTrack.scrollWidth-carouselTrack.clientWidth;
+        if(carouselTrack.scrollLeft>=maxScroll-10){
+          carouselTrack.scrollTo({left:0,behavior:'smooth'});
+        }else{
+          carouselTrack.scrollBy({left:1,behavior:'auto'});
+        }
+      }
+    },20);
+  }
+
+  carouselTrack.addEventListener('mouseenter',()=>scrollPaused=true);
+  carouselTrack.addEventListener('mouseleave',()=>scrollPaused=false);
+  carouselTrack.addEventListener('touchstart',()=>scrollPaused=true);
+  carouselTrack.addEventListener('touchend',()=>{
+    setTimeout(()=>scrollPaused=false,2000);
+  });
+
+  startAutoScroll();
+}
+
+// Carousel arrow scroll
+function scrollCarousel(dir){
+  const track=document.getElementById('carouselTrack');
+  const itemWidth=track.querySelector('.carousel-item').offsetWidth+20;
+  track.scrollBy({left:dir*itemWidth*3,behavior:'smooth'});
+}
+</script>
+</body>
+</html>

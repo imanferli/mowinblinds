@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami — MOWIN Blinds | Distributor Modern Window Blinds Jakarta</title>
+  <meta name="description" content="Kenali MOWIN Blinds, distributor modern window blinds di Jakarta yang melayani B2B vendor interior, kontraktor, dan workshop furniture. Kisah kami, nilai yang kami pegang, dan cara kami bekerja di Jabodetabek.">
+  <meta name="keywords" content="distributor modern window blinds, tentang mowin blinds, vendor interior Jakarta, roller blinds Jakarta, blinds kantor Jabodetabek, distributor blinds Jakarta">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.mowinblinds.com/about/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tentang Kami — MOWIN Blinds | Distributor Modern Window Blinds Jakarta">
+  <meta property="og:description" content="Kisah, nilai, dan cara kerja MOWIN Blinds — distributor modern window blinds untuk vendor interior, kontraktor, dan workshop furniture di Jabodetabek.">
+  <meta property="og:image" content="https://www.mowinblinds.com/wp-content/uploads/2023/12/2.jpg">
+  <meta property="og:url" content="https://www.mowinblinds.com/about/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MOWIN Blinds">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tentang Kami — MOWIN Blinds | Distributor Modern Window Blinds">
+  <meta name="twitter:description" content="Kisah dan cara bekerja distributor modern window blinds untuk B2B di Jabodetabek.">
+  <meta name="twitter:image" content="https://www.mowinblinds.com/wp-content/uploads/2023/12/2.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind + GSAP + Lenis + Lucide -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            bg: '#F8F8F8',
+            dark: '#111111',
+            accent: '#b19777',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root {
+      --c-bg: #F8F8F8;
+      --c-dark: #111111;
+      --c-accent: #b19777;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      background: var(--c-bg);
+      color: var(--c-dark);
+    }
+
+    .display-font { font-family: 'Space Grotesk', sans-serif; }
+
+    .noise-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      opacity: 0.035;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    .hero-text-huge {
+      font-size: clamp(3.5rem, 14vw, 12rem);
+      line-height: 0.95;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+    }
+
+    /* Reveal animation */
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.9s ease, transform 0.9s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    .nav-link.active { color: var(--c-accent); }
+
+    /* Hover underline for links */
+    .link-line { position: relative; }
+    .link-line::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -3px;
+      width: 0; height: 1px;
+      background: currentColor;
+      transition: width 0.4s ease;
+    }
+    .link-line:hover::after { width: 100%; }
+
+    /* Marquee for client-style band */
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track { animation: marquee 24s linear infinite; }
+
+    /* Gold tinted image treatment */
+    .img-gold {
+      filter: grayscale(1) contrast(1.05) brightness(0.98);
+      transition: filter 0.6s ease, transform 0.7s ease;
+    }
+    .img-gold:hover { filter: none; transform: scale(1.02); }
+  </style>
+
+  <!-- Schema.org: Organization + AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.mowinblinds.com/#organization",
+    "name": "MOWIN Blinds",
+    "url": "https://www.mowinblinds.com/",
+    "logo": "https://www.mowinblinds.com/wp-content/uploads/2023/12/2.jpg",
+    "description": "Distributor modern window blinds di Jakarta yang melayani B2B vendor interior, kontraktor, dan workshop furniture di Jabodetabek.",
+    "telephone": "+62-21-29620929",
+    "email": "info@mowinblinds.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "The Central 88, Jl. Griya Utama No.Unit 832, Pademangan Timur",
+      "addressLocality": "Jakarta Utara",
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "14410",
+      "addressCountry": "ID"
+    },
+    "sameAs": [
+      "https://www.instagram.com/mowinblinds/",
+      "https://www.tiktok.com/@mowinblinds",
+      "https://www.facebook.com/mowin.id/",
+      "https://www.youtube.com/@mowinblinds"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org: AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Tentang MOWIN Blinds",
+    "url": "https://www.mowinblinds.com/about/",
+    "inLanguage": "id",
+    "mainEntity": {
+      "@type": "Organization",
+      "@id": "https://www.mowinblinds.com/#organization"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Distributor Modern Window Blinds"
+    }
+  }
+  </script>
+
+  <!-- Schema.org: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Apa itu MOWIN Blinds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MOWIN Blinds adalah distributor modern window blinds yang berlokasi di Jakarta Utara. Kami menyediakan berbagai jenis blinds termasuk roller blinds, vertical blinds, 3D blinds, exterior blinds, printed blinds, interior curtain, dan hospital curtain untuk kebutuhan B2B seperti vendor interior, kontraktor, dan workshop furniture."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Siapa target utama MOWIN Blinds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MOWIN Blinds fokus melayani segmen B2B, yaitu vendor interior design, perusahaan dan korporasi, workshop furniture, serta vendor kontraktor yang membutuhkan pasokan window blinds dalam jumlah besar dengan harga kompetitif dan kualitas konsisten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Area layanan MOWIN Blinds mencakup daerah mana saja?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MOWIN Blinds melayani wilayah Jabodetabek yang meliputi Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Kantor kami berlokasi di The Central 88, Jl. Griya Utama No.Unit 832, Pademangan Timur, Jakarta Utara, dekat area Kemayoran."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mengapa memilih MOWIN Blinds sebagai distributor blinds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MOWIN Blinds bekerja sama dengan produsen berpengalaman yang memproduksi kain dan komponen berkualitas, sehingga hasil akhirnya presisi dan tahan lama. Kami melayani pasokan B2B dengan harga kompetitif, proses pengukuran dan pemasangan yang rapi, serta dukungan penuh dari konsultasi hingga instalasi."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://www.mowinblinds.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Tentang Kami", "item": "https://www.mowinblinds.com/about/" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="noise-overlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <header class="relative min-h-[90vh] bg-[#080808] text-white overflow-hidden flex items-end">
+    <div class="absolute inset-0">
+      <img src="./assets/images/origin-story.jpg"
+           alt="Tim MOWIN Blinds — distributor modern window blinds Jakarta"
+           class="w-full h-full object-cover opacity-40 grayscale">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/40 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-16 py-28">
+      <p class="text-accent text-sm tracking-widest uppercase font-medium mb-6 reveal">Distributor Modern Window Blinds &mdash; Jakarta</p>
+      <h1 class="display-font font-light leading-[0.95] tracking-tight text-4xl md:text-7xl max-w-4xl reveal">
+        Kami percaya setiap jendela layak mendapat perhatian penuh.
+      </h1>
+      <p class="mt-8 max-w-xl text-white/60 text-base md:text-lg reveal">
+        MOWIN Blinds mengawali perjalanan dari kebutuhan yang sederhana: menghadirkan blinds yang <em class="text-accent">fungsional dan indah</em> bagi ruang-ruang yang dihuni orang sehari-hari.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4 reveal">
+        <a href="https://wa.me/628119271628" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 text-sm tracking-wide bg-accent text-black rounded-full px-8 py-3.5 hover:bg-white transition-colors">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Diskusikan Proyek Anda
+        </a>
+        <a href="#kisah"
+           class="inline-flex items-center gap-2 text-sm tracking-wide border border-white/30 rounded-full px-8 py-3.5 hover:bg-white hover:text-black transition-all">
+          Baca Kisah Kami
+          <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== KISAH KAMI ===== -->
+  <section id="kisah" class="py-24 md:py-36 max-w-[1600px] mx-auto px-6 md:px-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div class="lg:col-span-4 lg:sticky lg:top-28">
+        <p class="text-accent text-sm tracking-wider font-medium uppercase mb-4 reveal">01 &mdash; Kisah Kami</p>
+        <h2 class="display-font text-3xl md:text-5xl font-light leading-tight tracking-tight reveal">
+          Berawal dari <span class="italic text-accent">kepedulian</span> pada setiap ruang.
+        </h2>
+      </div>
+
+      <div class="lg:col-span-8 space-y-6 text-black/70 text-lg leading-relaxed reveal">
+        <p>
+          Jendela adalah <strong>jantung setiap ruangan</strong>. Ia membiarkan cahaya masuk, menciptakan suasana yang hangat dan nyaman. Dari pemahaman inilah MOWIN Blinds lahir &mdash; bukan sekadar menjual produk, tetapi menghadirkan kenyamanan lewat pencahayaan yang tepat.
+        </p>
+        <p>
+          Kami bekerja sama dengan <strong>produsen yang sudah berpengalaman puluhan tahun</strong> dalam memproduksi kain dan komponen blinds berkualitas. Kerja sama ini memungkinkan kami meracik blinds yang presisi, tahan lama, dan sesuai dengan kebutuhan setiap klien &mdash; dari rumah tinggal hingga kantor dan proyek berskala besar.
+        </p>
+        <p>
+          Komitmen kami sederhana: memberikan layanan terbaik. Kami berusaha keras menciptakan produk blinds yang fungsional dan indah, yang tidak hanya memenuhi tetapi melampaui kebutuhan klien. Setiap langkah &mdash; konsultasi, pengukuran, produksi, hingga pemasangan &mdash; kami kerjakan dengan teliti.
+        </p>
+        <blockquote class="border-l-2 border-accent pl-6 text-accent display-font text-2xl font-light italic my-8">
+          "Perfection for every window."
+        </blockquote>
+
+        <div class="overflow-hidden rounded-2xl reveal">
+          <img src="./assets/images/service-general.png"
+               alt="Layanan pemasangan window blinds MOWIN untuk klien B2B di Jakarta"
+               class="w-full h-[280px] md:h-[380px] object-cover img-gold">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ANGKA / BUKTI ===== -->
+  <section class="py-16 md:py-24 bg-[#111111] text-white">
+    <div class="max-w-[1600px] mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="reveal">
+        <p class="display-font text-5xl md:text-6xl font-light text-accent">7</p>
+        <p class="mt-3 text-white/60 uppercase tracking-wider text-xs">Jenis Produk Window Blinds</p>
+      </div>
+      <div class="reveal">
+        <p class="display-font text-5xl md:text-6xl font-light text-accent">5</p>
+        <p class="mt-3 text-white/60 uppercase tracking-wider text-xs">Wilayah Layanan (Jabodetabek)</p>
+      </div>
+      <div class="reveal">
+        <p class="display-font text-5xl md:text-6xl font-light text-accent">B2B</p>
+        <p class="mt-3 text-white/60 uppercase tracking-wider text-xs">Fokus Pasokan Vendor &amp; Kontraktor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NILAI KAMI ===== -->
+  <section id="nilai" class="py-24 md:py-36 max-w-[1600px] mx-auto px-6 md:px-16">
+    <div class="mb-16 max-w-3xl">
+      <p class="text-accent text-sm tracking-wider font-medium uppercase mb-4 reveal">02 &mdash; Nilai Kami</p>
+      <h2 class="display-font text-3xl md:text-5xl font-light leading-tight tracking-tight reveal">
+        Apa yang kami <span class="italic text-accent">jaga</span> di setiap proyek.
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10 border border-black/10">
+      <div class="bg-white p-10 md:p-12 reveal">
+        <i data-lucide="gem" class="w-8 h-8 text-accent mb-6"></i>
+        <h3 class="display-font text-2xl font-light mb-3 text-black">Kualitas Tanpa Kompromi</h3>
+        <p class="text-black/50 leading-relaxed text-sm">
+          Kami memilih produsen kain dan komponen dengan rekam jejak panjang. Hasilnya blinds yang rapi, presisi, dan tahan terhadap pemakaian sehari-hari.
+        </p>
+      </div>
+      <div class="bg-white p-10 md:p-12 reveal">
+        <i data-lucide="ruler" class="w-8 h-8 text-accent mb-6"></i>
+        <h3 class="display-font text-2xl font-light mb-3 text-black">Presisi di Setiap Detail</h3>
+        <p class="text-black/50 leading-relaxed text-sm">
+          Pengukuran yang akurat dan proses produksi yang teliti memastikan produk pas dengan dimensi jendela Anda, tanpa celah atau hasil yang mengecewakan.
+        </p>
+      </div>
+      <div class="bg-white p-10 md:p-12 reveal">
+        <i data-lucide="handshake" class="w-8 h-8 text-accent mb-6"></i>
+        <h3 class="display-font text-2xl font-light mb-3 text-black">Kemitraan Jangka Panjang</h3>
+        <p class="text-black/50 leading-relaxed text-sm">
+          Kami memperlakukan setiap vendor, kontraktor, dan workshop furniture sebagai mitra &mdash; bukan sekadar transaksi. Pasokan stabil, harga kompetitif, dan dukungan penuh.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARA KERJA ===== -->
+  <section id="proses" class="py-24 md:py-36 bg-[#F0F0F0]">
+    <div class="max-w-[1600px] mx-auto px-6 md:px-16">
+      <div class="mb-16 max-w-3xl">
+        <p class="text-accent text-sm tracking-wider font-medium uppercase mb-4 reveal">03 &mdash; Cara Kerja</p>
+        <h2 class="display-font text-3xl md:text-5xl font-light leading-tight tracking-tight reveal">
+          Bagaimana kami mengerjakan <span class="italic text-accent">proyek</span> Anda.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="reveal">
+          <div class="aspect-[4/3] overflow-hidden rounded-xl mb-6">
+            <img src="./assets/images/service-consultation.png"
+                 alt="Konsultasi kebutuhan window blinds bersama tim MOWIN"
+                 class="w-full h-full object-cover img-gold">
+          </div>
+          <p class="display-font text-accent text-5xl font-light mb-6">01</p>
+          <h3 class="display-font text-xl font-light text-black mb-2">Konsultasi</h3>
+          <p class="text-black/50 text-sm leading-relaxed">Kami diskusikan kebutuhan, jenis blinds, material, dan anggaran proyek Anda.</p>
+        </div>
+        <div class="reveal">
+          <p class="display-font text-accent text-5xl font-light mb-6">02</p>
+          <h3 class="display-font text-xl font-light text-black mb-2">Pengukuran</h3>
+          <p class="text-black/50 text-sm leading-relaxed">Tim kami mengukur dimensi jendela/lokasi pemasangan secara akurat.</p>
+        </div>
+        <div class="reveal">
+          <p class="display-font text-accent text-5xl font-light mb-6">03</p>
+          <h3 class="display-font text-xl font-light text-black mb-2">Produksi</h3>
+          <p class="text-black/50 text-sm leading-relaxed">Blinds diproduksi oleh produsen berpengalaman dengan kendali kualitas ketat.</p>
+        </div>
+        <div class="reveal">
+          <div class="aspect-[4/3] overflow-hidden rounded-xl mb-6">
+            <img src="./assets/images/service-installation.png"
+                 alt="Instalasi window blinds MOWIN di lokasi proyek"
+                 class="w-full h-full object-cover img-gold">
+          </div>
+          <p class="display-font text-accent text-5xl font-light mb-6">04</p>
+          <h3 class="display-font text-xl font-light text-black mb-2">Pemasangan</h3>
+          <p class="text-black/50 text-sm leading-relaxed">Instalasi rapi di lokasi, selesai sesuai jadwal dan siap digunakan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUK KAMI ===== -->
+  <section class="py-24 md:py-36 max-w-[1600px] mx-auto px-6 md:px-16">
+    <div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div class="max-w-2xl">
+        <p class="text-accent text-sm tracking-wider font-medium uppercase mb-4 reveal">Produk Kami</p>
+        <h2 class="display-font text-3xl md:text-5xl font-light leading-tight tracking-tight reveal">
+          Ragam blinds untuk <span class="italic text-accent">setiap</span> kebutuhan ruang.
+        </h2>
+      </div>
+      <a href="https://www.mowinblinds.com/our-products/" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 text-sm tracking-wide border border-black/20 rounded-full px-8 py-3.5 hover:bg-dark hover:text-white transition-all duration-300 reveal">
+        Lihat Semua Produk
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="overflow-hidden rounded-2xl reveal">
+        <img src="./assets/images/product-roll-blinds.jpg"
+             alt="Roller blinds modern oleh MOWIN — distributor window blinds Jakarta"
+             class="w-full h-56 md:h-72 object-cover img-gold">
+        <p class="mt-3 text-sm text-black/60">Roller Blinds</p>
+      </div>
+      <div class="overflow-hidden rounded-2xl reveal">
+        <img src="./assets/images/product-3d-blinds.jpg"
+             alt="3D blinds premium oleh MOWIN"
+             class="w-full h-56 md:h-72 object-cover img-gold">
+        <p class="mt-3 text-sm text-black/60">3D Blinds</p>
+      </div>
+      <div class="overflow-hidden rounded-2xl reveal">
+        <img src="./assets/images/product-interior-curtain.jpg"
+             alt="Interior curtain oleh MOWIN"
+             class="w-full h-56 md:h-72 object-cover img-gold">
+        <p class="mt-3 text-sm text-black/60">Interior Curtain</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ (AEO) ===== -->
+  <section id="faq" class="py-24 md:py-36 max-w-[1600px] mx-auto px-6 md:px-16">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
+      <div class="lg:col-span-2">
+        <p class="text-accent text-sm tracking-wider font-medium uppercase mb-4 reveal">04 &mdash; FAQ</p>
+        <h2 class="display-font text-3xl md:text-4xl font-light leading-tight tracking-tight reveal">
+          Pertanyaan yang <span class="italic text-accent">sering</span> diajukan.
+        </h2>
+      </div>
+
+      <div class="lg:col-span-3 space-y-0">
+        <details class="group border-b border-black/10 reveal">
+          <summary class="flex items-center justify-between py-6 cursor-pointer list-none gap-6">
+            <span class="display-font text-lg md:text-xl font-light text-black">Apa itu MOWIN Blinds?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-accent shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-accent shrink-0 hidden group-open:block"></i>
+          </summary>
+          <div class="pb-6 text-black/50 leading-relaxed">
+            MOWIN Blinds adalah distributor modern window blinds yang berlokasi di Jakarta Utara. Kami menyediakan roller blinds, vertical blinds, 3D blinds, exterior blinds, printed blinds, interior curtain, dan hospital curtain untuk kebutuhan B2B seperti vendor interior, kontraktor, dan workshop furniture.
+          </div>
+        </details>
+
+        <details class="group border-b border-black/10 reveal">
+          <summary class="flex items-center justify-between py-6 cursor-pointer list-none gap-6">
+            <span class="display-font text-lg md:text-xl font-light text-black">Siapa target utama MOWIN Blinds?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-accent shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-accent shrink-0 hidden group-open:block"></i>
+          </summary>
+          <div class="pb-6 text-black/50 leading-relaxed">
+            Kami fokus melayani segmen B2B: vendor interior design, perusahaan dan korporasi, workshop furniture, serta vendor kontraktor yang membutuhkan pasokan window blinds dalam jumlah besar dengan kualitas konsisten.
+          </div>
+        </details>
+
+        <details class="group border-b border-black/10 reveal">
+          <summary class="flex items-center justify-between py-6 cursor-pointer list-none gap-6">
+            <span class="display-font text-lg md:text-xl font-light text-black">Mengapa memilih MOWIN sebagai distributor blinds?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-accent shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-accent shrink-0 hidden group-open:block"></i>
+          </summary>
+          <div class="pb-6 text-black/50 leading-relaxed">
+            Karena kami bermitra dengan produsen berpengalaman, mengutamakan presisi dan kualitas, serta melayani pasokan B2B dengan harga kompetitif dan dukungan penuh dari konsultasi hingga pemasangan.
+          </div>
+        </details>
+
+        <details class="group border-b border-black/10 reveal">
+          <summary class="flex items-center justify-between py-6 cursor-pointer list-none gap-6">
+            <span class="display-font text-lg md:text-xl font-light text-black">Apakah MOWIN melayani pengiriman ke luar Jabodetabek?</span>
+            <i data-lucide="plus" class="w-5 h-5 text-accent shrink-0 group-open:hidden"></i>
+            <i data-lucide="minus" class="w-5 h-5 text-accent shrink-0 hidden group-open:block"></i>
+          </summary>
+          <div class="pb-6 text-black/50 leading-relaxed">
+            Layanan instalasi utama kami mencakup wilayah Jabodetabek. Untuk kebutuhan pasokan produk ke luar area tersebut, silakan hubungi tim kami untuk menyesuaikan skema pengiriman terbaik bagi proyek Anda.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="bg-[#080808] text-white">
+    <div class="max-w-[1600px] mx-auto px-6 md:px-16 py-24 md:py-32 flex flex-col md:flex-row md:items-end justify-between gap-10">
+      <div class="reveal">
+        <p class="text-accent text-sm tracking-wider uppercase mb-5">Siap memulai proyek?</p>
+        <h2 class="display-font text-4xl md:text-7xl font-light tracking-tight leading-[0.95]">
+          MARI BERKOLABORASI
+        </h2>
+        <p class="text-white/40 text-sm mt-5 max-w-md">
+          Konsultasikan kebutuhan window blinds proyek Anda. Tim MOWIN siap membantu memilih produk dan menghitung penawaran terbaik.
+        </p>
+      </div>
+      <div class="reveal flex flex-wrap gap-4">
+        <a href="https://wa.me/628119271628" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 text-sm tracking-wide bg-accent text-dark rounded-full px-8 py-4 hover:bg-white transition-colors">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Chat WhatsApp Sekarang
+        </a>
+        <a href="mailto:info@mowinblinds.com"
+           class="inline-flex items-center gap-2 text-sm tracking-wide border border-white/30 rounded-full px-8 py-4 hover:bg-white hover:text-black transition-all">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          info@mowinblinds.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Lenis smooth scroll
+    const lenis = new Lenis({ duration: 1.4, smoothWheel: true });
+    function raf(time) { lenis.raf(time * 1000); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    lucide.createIcons();
+  </script>
+</body>
+</html>
